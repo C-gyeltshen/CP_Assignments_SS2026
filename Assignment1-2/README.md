@@ -43,7 +43,7 @@
 #### Output Screenshot
 
 
-> ![Q1 STL Output](./Assignment1-2/images/1.png)
+> ![Q1 STL Output](../Assignment1-2/images/1.png)
 
 ---
 
@@ -81,7 +81,7 @@ After V−1 relaxation passes, any edge that can still be relaxed must be part o
 #### Output Screenshots
 
 
-> ![Q2 No Negative Cycle](./Assignment1-2/images/2.png)
+> ![Q2 No Negative Cycle](../Assignment1-2/images/2.png)
 
 
 ---
@@ -129,7 +129,7 @@ A negative cycle allows indefinitely reducing a path's cost toward −∞. Becau
 #### Output Screenshot
 
 
-> ![Q3 Floyd-Warshall Matrix](./Assignment1-2/images/3.png)
+> ![Q3 Floyd-Warshall Matrix](../Assignment1-2/images/3.png)
 
 ---
 
@@ -168,7 +168,7 @@ for (int mask = 0; mask < (1 << N); ++mask) {
 #### Output Screenshot
 
 
-> ![Q1 Bitmask Output](./Assignment1-2/images/4.png)
+> ![Q1 Bitmask Output](../Assignment1-2/images/4.png)
 
 ---
 
@@ -293,7 +293,7 @@ Rabin-Karp uses a rolling polynomial hash. When the hash of a text window matche
 #### Output Screenshot
 
 
-> ![Q5 String Matching Output](./Assignment1-2/images/5.png)
+> ![Q5 String Matching Output](../Assignment1-2/images/5.png)
 
 ---
 
