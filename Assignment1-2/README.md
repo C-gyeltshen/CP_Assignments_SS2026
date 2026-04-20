@@ -1,7 +1,4 @@
 # Computative Programming Module — Assignment 1 & 2
-
-
-
 ## Table of Contents
 
 - [Assignment 1](#assignment-1)

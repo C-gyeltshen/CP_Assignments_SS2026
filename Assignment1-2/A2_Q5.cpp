@@ -1,8 +1,3 @@
-// ============================================================
-//  Assignment 2 – Question 5: String Matching Algorithms
-//  (a) KMP — compute LPS array for "ABABCABAB"
-//  (b) Rabin-Karp — explanation (see comments) + demonstration
-// ============================================================
 #include <iostream>
 #include <vector>
 #include <string>
@@ -129,46 +124,3 @@ int main() {
 
     return 0;
 }
-
-/*
-──────────────────────────────────────────────────────────────────
-  PART (a): LPS RESULT SUMMARY
-──────────────────────────────────────────────────────────────────
-  Pattern : A  B  A  B  C  A  B  A  B
-  Index   : 0  1  2  3  4  5  6  7  8
-  LPS     : 0  0  1  2  0  1  2  3  4
-
-  Interpretation: LPS[8] = 4 means the 4-character string "ABAB"
-  is simultaneously a prefix AND a suffix of "ABABCABAB".
-  The KMP search algorithm uses this table to skip unnecessary
-  re-comparisons when a mismatch occurs.
-
-──────────────────────────────────────────────────────────────────
-  PART (b): RABIN-KARP THEORY
-──────────────────────────────────────────────────────────────────
-
-  HOW HASH COLLISIONS ARE HANDLED:
-  ─────────────────────────────────
-  Rabin-Karp uses a rolling polynomial hash.  When the window hash
-  equals the pattern hash, that is a CANDIDATE match — not a
-  guaranteed one.  A character-by-character verification step is
-  performed every time the hashes agree.  If they differ after
-  verification it is a "spurious hit" (false positive collision).
-  Using a large prime modulus (e.g. 10^9 + 9) makes collisions
-  extremely rare in practice.
-
-  TIME COMPLEXITY:
-  ─────────────────
-  • Average case: O(N + M)
-      — The rolling hash computes each new window hash in O(1),
-        so the N-window scan is O(N).  Verification is triggered
-        rarely (expected O(1) per true match).
-
-  • Worst case : O(N × M)
-      — Occurs when every window produces a spurious hash
-        collision (adversarially crafted input or poor hash
-        choice), forcing O(M) verification for each of the O(N)
-        windows.
-
-──────────────────────────────────────────────────────────────────
-*/
