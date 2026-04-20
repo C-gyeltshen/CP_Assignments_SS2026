@@ -1,12 +1,6 @@
 # Computative Programming Module — Assignment 1 & 2
 
-> **Course:** Computative Programming  
-> **Language:** C++17  
-> **Platform:** macOS (Apple M1)  
-> **Compiler:** `g++ -std=c++17 -O2`  
-> **Total Marks:** 30 (15 + 15)
 
----
 
 ## Table of Contents
 
